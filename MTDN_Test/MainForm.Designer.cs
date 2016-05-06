@@ -42,6 +42,7 @@
             this.mNotifyicon = new System.Windows.Forms.NotifyIcon(this.components);
             this.tabs = new System.Windows.Forms.TabControl();
             this.tabGraph = new System.Windows.Forms.TabPage();
+            this.tabletPointer1 = new MidiTouch.TabletPointer();
             this.tabOptions = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -53,7 +54,6 @@
             this.tabAbout = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.tabletPointer1 = new MidiTouch.TabletPointer();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.UpDownChannel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UpDownValue)).BeginInit();
@@ -185,6 +185,18 @@
             this.tabGraph.Text = "Graphic";
             this.tabGraph.UseVisualStyleBackColor = true;
             // 
+            // tabletPointer1
+            // 
+            this.tabletPointer1.BackColor = System.Drawing.SystemColors.Window;
+            this.tabletPointer1.BrushColor = System.Drawing.Color.Red;
+            this.tabletPointer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabletPointer1.DrawingSurfaceColor = System.Drawing.SystemColors.InactiveCaption;
+            this.tabletPointer1.Location = new System.Drawing.Point(3, 3);
+            this.tabletPointer1.Name = "tabletPointer1";
+            this.tabletPointer1.Size = new System.Drawing.Size(387, 331);
+            this.tabletPointer1.TabIndex = 4;
+            this.tabletPointer1.TraceSize = 10;
+            // 
             // tabOptions
             // 
             this.tabOptions.Controls.Add(this.groupBox3);
@@ -303,18 +315,6 @@
     "tHub below :)\r\n\r\n";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // tabletPointer1
-            // 
-            this.tabletPointer1.BackColor = System.Drawing.SystemColors.Window;
-            this.tabletPointer1.BrushColor = System.Drawing.Color.Red;
-            this.tabletPointer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabletPointer1.DrawingSurfaceColor = System.Drawing.SystemColors.InactiveCaption;
-            this.tabletPointer1.Location = new System.Drawing.Point(3, 3);
-            this.tabletPointer1.Name = "tabletPointer1";
-            this.tabletPointer1.Size = new System.Drawing.Size(387, 331);
-            this.tabletPointer1.TabIndex = 4;
-            this.tabletPointer1.TraceSize = 10;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -322,6 +322,7 @@
             this.ClientSize = new System.Drawing.Size(401, 363);
             this.Controls.Add(this.tabs);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.Text = "MidiTouch";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);

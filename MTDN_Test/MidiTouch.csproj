@@ -68,9 +68,12 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Gear_icon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="NAudio">
-      <HintPath>..\..\..\..\..\Dropbox\Développement\Programmation\C#\Librairies\NAudio\NAudio.dll</HintPath>
+      <HintPath>..\..\..\..\Dropbox\Développement\Programmation\C#\Librairies\NAudio\NAudio.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -86,7 +89,7 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="WacomMTDN">
-      <HintPath>..\..\..\..\..\Dropbox\Développement\Programmation\C#\Librairies\WacomMTDN\WacomMTDN\bin\Debug\WacomMTDN.dll</HintPath>
+      <HintPath>..\..\..\..\Dropbox\Développement\Programmation\C#\Librairies\WacomMTDN\WacomMTDN\bin\Debug\WacomMTDN.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -150,6 +153,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\GitHub_Logo.png" />
+    <Content Include="Gear_icon.ico" />
     <Content Include="Settings.xml">
       <SubType>Designer</SubType>
     </Content>
