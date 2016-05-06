@@ -42,7 +42,6 @@
             this.mNotifyicon = new System.Windows.Forms.NotifyIcon(this.components);
             this.tabs = new System.Windows.Forms.TabControl();
             this.tabGraph = new System.Windows.Forms.TabPage();
-            this.tabletPointer1 = new MidiTouch.TabletPointer();
             this.tabOptions = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -54,6 +53,7 @@
             this.tabAbout = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
+            this.tabletPointer1 = new MidiTouch.TabletPointer();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.UpDownChannel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UpDownValue)).BeginInit();
@@ -185,18 +185,6 @@
             this.tabGraph.Text = "Graphic";
             this.tabGraph.UseVisualStyleBackColor = true;
             // 
-            // tabletPointer1
-            // 
-            this.tabletPointer1.BackColor = System.Drawing.SystemColors.Window;
-            this.tabletPointer1.BrushColor = System.Drawing.Color.Red;
-            this.tabletPointer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabletPointer1.DrawingSurfaceColor = System.Drawing.SystemColors.InactiveCaption;
-            this.tabletPointer1.Location = new System.Drawing.Point(3, 3);
-            this.tabletPointer1.Name = "tabletPointer1";
-            this.tabletPointer1.Size = new System.Drawing.Size(387, 331);
-            this.tabletPointer1.TabIndex = 4;
-            this.tabletPointer1.TraceSize = 10;
-            // 
             // tabOptions
             // 
             this.tabOptions.Controls.Add(this.groupBox3);
@@ -314,6 +302,18 @@
             this.label4.Text = "This software is under MIT licence. \r\n\r\nDevelopped by Stanyslas Bres, visit my Gi" +
     "tHub below :)\r\n\r\n";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tabletPointer1
+            // 
+            this.tabletPointer1.BackColor = System.Drawing.SystemColors.Window;
+            this.tabletPointer1.BrushColor = System.Drawing.Color.Red;
+            this.tabletPointer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabletPointer1.DrawingSurfaceColor = System.Drawing.SystemColors.InactiveCaption;
+            this.tabletPointer1.Location = new System.Drawing.Point(3, 3);
+            this.tabletPointer1.Name = "tabletPointer1";
+            this.tabletPointer1.Size = new System.Drawing.Size(387, 331);
+            this.tabletPointer1.TabIndex = 4;
+            this.tabletPointer1.TraceSize = 10;
             // 
             // MainForm
             // 
